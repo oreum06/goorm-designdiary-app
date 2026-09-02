@@ -165,8 +165,19 @@ export function DiaryCreatePage() {
       ) : null}
 
       {step === 2 && city ? (
-        <div className="flex flex-col gap-stack-lg px-margin-mobile pb-32">
+        <div className="flex flex-col gap-stack-lg px-margin-mobile pb-28">
           <PhotoPicker city={city} value={photo} onChange={setPhoto} />
+          <div className="fixed inset-x-0 bottom-0 z-20 bg-gradient-to-t from-background via-background to-transparent px-margin-mobile pb-safe pt-8">
+            <button
+              type="button"
+              disabled={!photo}
+              onClick={() => setStep(3)}
+              className="mb-4 flex h-14 w-full items-center justify-center gap-2 rounded-full bg-primary font-label-md text-body-md text-on-primary shadow-[0_8px_16px_rgba(171,53,0,0.2)] transition-all active:scale-[0.98] disabled:cursor-not-allowed disabled:bg-surface-container-high disabled:text-on-surface-variant disabled:shadow-none"
+            >
+              <span>{t("create.photoContinue")}</span>
+              <Icon name="arrow_forward" className="text-[20px]" />
+            </button>
+          </div>
         </div>
       ) : null}
 
