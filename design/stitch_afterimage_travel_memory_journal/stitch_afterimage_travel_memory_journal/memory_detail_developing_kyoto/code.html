@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f7f4ee;}body{overscroll-behavior:none;min-height:100vh;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,20px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}main > :first-child{margin-top:0!important;}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"outline-variant":"#e1bfb5","on-primary-fixed":"#390c00","surface-variant":"#e5e2e1","surface-container-low":"#f6f3f2","surface-tint":"#ab3500","primary-fixed-dim":"#ffb59d","primary-fixed":"#ffdbd0","on-tertiary-container":"#003744","tertiary-fixed":"#b5ebff",tertiary:"#00677e",background:"#f7f4ee","surface-dim":"#dcd9d9","on-secondary-container":"#00536f","tertiary-container":"#00a7cb",surface:"#ffffff","surface-container-highest":"#e5e2e1","on-background":"#1c1b1b","status-developing":"#8a8578","on-tertiary-fixed":"#001f28","surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#004d67","on-surface":"#1c1b1b","surface-container":"#f0edec","primary-container":"#ff6b35","secondary-fixed":"#c1e8ff",error:"#ba1a1a","secondary-container":"#57cafe","surface-bright":"#fcf9f8","inverse-on-surface":"#f3f0ef","secondary-fixed-dim":"#74d1ff","on-primary-container":"#5f1900","on-secondary-fixed":"#001e2b","inverse-primary":"#ffb59d","tertiary-fixed-dim":"#59d5fb","on-surface-variant":"#594139","on-primary":"#ffffff","on-error":"#ffffff","on-secondary":"#ffffff","status-undeveloped":"#2a2a2a","error-container":"#ffdad6",border:"#e8e2d8","on-error-container":"#93000a","text-muted":"#77736d",secondary:"#006687",primary:"#ab3500","surface-container-high":"#eae7e7","on-primary-fixed-variant":"#832600","on-tertiary-fixed-variant":"#004e60","on-tertiary":"#ffffff",outline:"#8d7168","inverse-surface":"#313030"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"stack-md":"16px","margin-desktop":"64px","margin-mobile":"20px",gutter:"24px","stack-lg":"32px",unit:"4px","stack-sm":"8px"},fontFamily:{"body-md":["Inter"],"headline-sm":["Playfair Display"],"body-lg":["Inter"],"label-md":["Inter"],"display-lg":["Playfair Display"],"headline-md":["Playfair Display"],"display-lg-mobile":["Playfair Display"],caption:["Inter"]},fontSize:{"body-md":["16px",{lineHeight:"1.6",fontWeight:"400"}],"headline-sm":["24px",{lineHeight:"1.3",fontWeight:"600"}],"body-lg":["18px",{lineHeight:"1.6",fontWeight:"400"}],"label-md":["14px",{lineHeight:"1.2",letterSpacing:"0.05em",fontWeight:"600"}],"display-lg":["48px",{lineHeight:"1.1",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-md":["32px",{lineHeight:"1.2",fontWeight:"600"}],"display-lg-mobile":["36px",{lineHeight:"1.2",fontWeight:"700"}],caption:["12px",{lineHeight:"1.4",fontWeight:"400"}]}}}}</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-on-background"><header class="fixed top-0 inset-x-0 z-50 bg-background/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(35,28,20,0.04)]"><div class="h-20 px-margin-mobile flex items-center gap-4"><button class="w-10 h-10 flex items-center justify-start text-on-surface" onclick="history.back()"><span class="material-symbols-outlined">arrow_back_ios_new</span></button><h1 class="font-headline-sm text-headline-sm flex-1 truncate">Memory Detail</h1><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEQtzutfNxCgqTOj4vCqk3XVZjoQDvuLCbdJtTk6JiGCpfe_bdxEZgkuMPCaHTr_Ps4tU6zf7lWZWD_QgEKw2-I4I2bAshfezsXK4ZvJ9TphUvlm-Kha9KsG_TWqCkWT4U2ln-xg02HVs3afsQUM7Oy6lI51jnKX1CZ8d6HIcjCGZwARc5RwQOexFQpBYHTRGixmXqZuromVkq-vrSx4ECMvgh_z3Sp0dS9fKWe10IoJBwp8Ww0xhhbg"/></div></header><main class="flex flex-col relative w-full pt-20 min-h-screen bg-background"><div class="flex flex-col w-full min-h-screen bg-background relative pb-safe">
+<!-- Developing Photo Area -->
+<div class="relative w-full h-[530px] sm:h-[618px] bg-surface-variant overflow-hidden flex flex-col justify-end p-margin-mobile">
+<!-- Image Placeholder -->
+<div class="absolute inset-0 bg-cover bg-center transition-all duration-1000 ease-in-out" data-alt="A vintage, nostalgic photograph of a sunset over the rooftops of Kyoto, Japan. Soft, muted warm light. Shot on analog film, slightly out of focus, evoking a sense of a distant memory slowly coming into focus. Editorial photography style." id="memory-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCcFwQOIr2YcXtiV1bgE-jvk8bo0jx8LTj5txOVZQYfGVy_hht2F6LbyUG9jRi0z9ubm_tfnUMa9A8W9CoJa9I5PZu8ZCBSTIwbygfBRT6576iUKb6dXI8BQPFNw2a0_hftGFbRpHduaDyQrNg3kyhAPQkjc4fiLnmYN3GWGg7P9nrieaCm7VQUlg7Gy6b38eJfElR7TN9isA7GB-8wuJ_KYDz4r4NkLRLVFrXb92A0wbNDylMMyE0knA'); filter: grayscale(1) blur(4px);"></div>
+<!-- Subtle gradient overlay for text readability -->
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent"></div>
+<div class="relative z-10 flex flex-col gap-stack-sm text-on-background mb-stack-md">
+<div class="flex items-center gap-2">
+<span class="px-2 py-1 bg-surface-variant/80 backdrop-blur-sm rounded-full text-caption font-label-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] animate-spin-slow">hourglass_empty</span>
+          Developing
+        </span>
+<span class="text-caption text-on-background/70 font-body-md tracking-wider">KYOTO, JAPAN</span>
+</div>
+<h2 class="font-display-lg-mobile text-display-lg-mobile text-on-background leading-none">Evening by<br/>the Kamo River</h2>
+<p class="font-body-md text-text-muted mt-2">April 12, 2026</p>
+</div>
+</div>
+<!-- Content Section -->
+<div class="flex flex-col px-margin-mobile gap-stack-lg -mt-6 relative z-20">
+<!-- Progress Indicator Card -->
+<div class="bg-surface rounded-xl p-stack-md shadow-[0_12px_30px_rgba(35,28,20,0.06)] flex flex-col gap-stack-sm relative overflow-hidden">
+<div class="flex justify-between items-end mb-1">
+<span class="font-label-md text-on-surface">Development Status</span>
+<span class="font-headline-sm text-primary" id="progress-text">72%</span>
+</div>
+<!-- Custom Progress Bar -->
+<div class="w-full h-[2px] bg-surface-container-high rounded-full overflow-hidden relative">
+<div class="absolute top-0 left-0 h-full bg-tertiary-container w-[72%] transition-all duration-1000 ease-out" id="progress-bar"></div>
+<!-- Subtle shimmer effect -->
+<div class="absolute top-0 left-0 h-full w-[72%] bg-gradient-to-r from-transparent via-white/50 to-transparent translate-x-[-100%] animate-[shimmer_2s_infinite]"></div>
+</div>
+<div class="flex justify-between items-center mt-2 text-caption text-text-muted">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> Est. 6h remaining</span>
+<button class="text-tertiary font-label-md" onclick="boostDevelopment()">Accelerate</button>
+</div>
+</div>
+<!-- Memory Note (Scrapbook feel) -->
+<div class="relative bg-surface rounded-lg p-stack-lg shadow-[0_4px_20px_rgba(35,28,20,0.04)] mt-stack-md">
+<!-- Washi Tape Accents -->
+<div class="absolute -top-3 -left-3 w-12 h-4 bg-secondary/20 rotate-[-12deg] rounded-sm backdrop-blur-md"></div>
+<div class="absolute -bottom-3 -right-3 w-16 h-5 bg-tertiary/15 rotate-[8deg] rounded-sm backdrop-blur-md"></div>
+<span class="material-symbols-outlined text-outline-variant text-[32px] absolute top-4 right-4 opacity-50">format_quote</span>
+<p class="font-body-lg text-on-surface leading-relaxed text-center italic relative z-10 text-on-surface-variant">
+            "The cherry blossoms were just starting to bloom along the riverbank. The air was crisp, smelling faintly of roasted matcha and damp earth. We sat for hours, watching the lanterns flicker to life as the light faded."
+        </p>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-stack-md mt-stack-sm pb-stack-lg">
+<button class="w-full bg-tertiary-container text-on-tertiary-container py-4 rounded-xl font-label-md flex items-center justify-center gap-2 shadow-sm transition-transform active:scale-[0.98]" onclick="interactWithMemory()">
+<span class="material-symbols-outlined">auto_awesome</span>
+            Revisit to Develop
+        </button>
+<button class="w-full bg-transparent text-on-background py-4 rounded-xl font-label-md flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">edit</span>
+            Edit Field Notes
+        </button>
+</div>
+</div>
+</div>
+<style>
+    @keyframes shimmer {
+        100% {
+            transform: translateX(100%);
+        }
+    }
+    .animate-spin-slow {
+        animation: spin 3s linear infinite;
+    }
+</style>
+<script>
+    let progress = 72;
+    const img = document.getElementById('memory-image');
+    const progressBar = document.getElementById('progress-bar');
+    const progressText = document.getElementById('progress-text');
+
+    function updateVisuals() {
+        // Map progress 0-100 to grayscale 1-0 and blur 8px-0px
+        const grayscale = Math.max(0, 1 - (progress / 100));
+        const blur = Math.max(0, 4 - (progress / 25)); // 4px max blur
+        
+        img.style.filter = `grayscale(${grayscale}) blur(${blur}px)`;
+        progressBar.style.width = `${progress}%`;
+        progressText.innerText = `${Math.round(progress)}%`;
+    }
+
+    function boostDevelopment() {
+        if(progress < 100) {
+            progress = Math.min(100, progress + 5);
+            updateVisuals();
+            
+            // Add a little haptic feedback feel if supported
+            if (navigator.vibrate) {
+                navigator.vibrate(50);
+            }
+        }
+    }
+    
+    function interactWithMemory() {
+         if(progress < 100) {
+            progress = Math.min(100, progress + 15);
+            updateVisuals();
+        }
+    }
+
+    // Initial set
+    setTimeout(updateVisuals, 100);
+</script></main></body></html>

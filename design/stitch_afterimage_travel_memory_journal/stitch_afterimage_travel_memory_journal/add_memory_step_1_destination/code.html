@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#00a7cb", "surface-dim": "#dcd9d9", "inverse-primary": "#ffb59d", "surface": "#ffffff", "surface-container-low": "#f6f3f2", "on-secondary-fixed-variant": "#004d67", "on-background": "#1c1b1b", "secondary-fixed": "#c1e8ff", "primary": "#ab3500", "error": "#ba1a1a", "on-primary-fixed": "#390c00", "on-surface-variant": "#594139", "secondary": "#006687", "primary-fixed-dim": "#ffb59d", "on-primary-fixed-variant": "#832600", "on-tertiary-fixed": "#001f28", "surface-container-lowest": "#ffffff", "primary-fixed": "#ffdbd0", "on-surface": "#1c1b1b", "tertiary-fixed": "#b5ebff", "outline": "#8d7168", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "inverse-surface": "#313030", "surface-container-highest": "#e5e2e1", "surface-variant": "#e5e2e1", "primary-container": "#ff6b35", "inverse-on-surface": "#f3f0ef", "secondary-fixed-dim": "#74d1ff", "outline-variant": "#e1bfb5", "status-developing": "#8a8578", "status-undeveloped": "#2a2a2a", "secondary-container": "#57cafe", "on-tertiary-container": "#003744", "on-error": "#ffffff", "surface-container": "#f0edec", "surface-container-high": "#eae7e7", "tertiary-fixed-dim": "#59d5fb", "on-secondary-fixed": "#001e2b", "on-tertiary-fixed-variant": "#004e60", "text-muted": "#77736d", "on-primary": "#ffffff", "border": "#e8e2d8", "surface-bright": "#fcf9f8", "tertiary": "#00677e", "on-secondary-container": "#00536f", "surface-tint": "#ab3500", "on-secondary": "#ffffff", "on-primary-container": "#5f1900", "background": "#f7f4ee", "on-error-container": "#93000a" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "stack-lg": "32px", "stack-sm": "8px", "margin-desktop": "64px", "stack-md": "16px", "gutter": "24px", "margin-mobile": "20px", "unit": "4px" }, "fontFamily": { "caption": ["Inter"], "display-lg-mobile": ["Playfair Display"], "headline-sm": ["Playfair Display"], "label-md": ["Inter"], "body-md": ["Inter"], "headline-md": ["Playfair Display"], "body-lg": ["Inter"], "display-lg": ["Playfair Display"] }, "fontSize": { "caption": ["12px", { "lineHeight": "1.4", "fontWeight": "400" }], "display-lg-mobile": ["36px", { "lineHeight": "1.2", "fontWeight": "700" }], "headline-sm": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }], "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }], "headline-md": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }], "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } }</script><style>@layer base { .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-on-background"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-4 flex items-center gap-4"><button class="w-10 h-10 flex items-center justify-center text-on-surface hover:bg-surface-container rounded-full transition-colors" onclick="history.back()"><span class="material-symbols-outlined">arrow_back_ios_new</span></button><h1 class="font-headline-sm text-headline-sm text-on-surface">Add Memory</h1></div></header><main class="relative w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full h-full relative font-body-md bg-background">
+<div class="px-gutter pt-stack-lg pb-stack-sm flex flex-col gap-stack-md">
+<div class="w-full flex items-center gap-unit">
+<div class="h-[2px] flex-1 bg-primary rounded-full"></div>
+<div class="h-[2px] flex-1 bg-surface-variant rounded-full"></div>
+<div class="h-[2px] flex-1 bg-surface-variant rounded-full"></div>
+</div>
+<span class="text-caption text-text-muted uppercase tracking-widest font-semibold">1. Destination</span>
+</div>
+<div class="px-gutter pt-stack-sm pb-stack-lg flex flex-col gap-stack-sm">
+<h1 class="font-headline-md text-headline-md text-on-surface">Where did you go?</h1>
+<p class="text-body-md text-on-surface-variant">Every memory needs a place to call home.</p>
+</div>
+<div class="px-gutter flex flex-col gap-stack-lg flex-1">
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-on-surface-variant/50">search</span>
+</div>
+<input class="w-full bg-surface-container-low text-on-surface rounded-xl py-3 pl-10 pr-4 outline-none focus:bg-surface transition-colors placeholder:text-on-surface-variant/50 border-b-2 border-transparent focus:border-outline shadow-[0_2px_8px_rgba(35,28,20,0.04)]" placeholder="Search country or city..." type="text"/>
+</div>
+<div class="flex flex-col gap-stack-md">
+<h2 class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Quick Select</h2>
+<div class="flex flex-wrap gap-3">
+<button class="px-4 py-2 bg-surface text-on-surface rounded-full shadow-[0_4px_12px_rgba(35,28,20,0.06)] hover:bg-surface-container transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">location_on</span>
+<span>Kyoto, JP</span>
+</button>
+<button class="px-4 py-2 bg-surface text-on-surface rounded-full shadow-[0_4px_12px_rgba(35,28,20,0.06)] hover:bg-surface-container transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">location_on</span>
+<span>Lisbon, PT</span>
+</button>
+<button class="px-4 py-2 bg-surface text-on-surface rounded-full shadow-[0_4px_12px_rgba(35,28,20,0.06)] hover:bg-surface-container transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">location_on</span>
+<span>Seoul, KR</span>
+</button>
+<button class="px-4 py-2 bg-surface text-on-surface rounded-full shadow-[0_4px_12px_rgba(35,28,20,0.06)] hover:bg-surface-container transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">location_on</span>
+<span>Oaxaca, MX</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-stack-sm bg-surface rounded-2xl p-4 shadow-[0_12px_30px_rgba(35,28,20,0.10)] relative overflow-hidden">
+<div class="absolute top-0 right-0 w-16 h-4 bg-secondary/30 transform rotate-45 translate-x-4 -translate-y-2 blur-[1px]"></div>
+<div class="flex justify-between items-center py-3 border-b border-surface-variant border-opacity-50">
+<span class="text-body-lg text-on-surface font-medium">France</span>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</div>
+<div class="flex justify-between items-center py-3 border-b border-surface-variant border-opacity-50">
+<span class="text-body-lg text-on-surface font-medium">Italy</span>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</div>
+<div class="flex justify-between items-center py-3 border-b border-surface-variant border-opacity-50">
+<span class="text-body-lg text-on-surface font-medium">Japan</span>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</div>
+<div class="flex justify-between items-center py-3">
+<span class="text-body-lg text-on-surface font-medium">United States</span>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="px-gutter pb-stack-lg pt-stack-md mt-auto sticky bottom-0 bg-gradient-to-t from-background via-background/90 to-transparent">
+<button class="w-full py-4 bg-primary-container text-on-primary-container rounded-full font-label-md text-label-md shadow-[0_8px_16px_rgba(255,107,53,0.2)] hover:opacity-90 transition-opacity flex justify-center items-center gap-2">
+<span>Continue</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div></main></body></html>
