@@ -18,13 +18,13 @@ const ko = {
   "common.goToTripBook": "Trip Book으로 이동",
   "common.unknownCity": "알 수 없는 도시",
 
-  // 현상 상태 (뱃지, alt 텍스트 등에서 공용)
-  "status.undeveloped": "미현상",
-  "status.developing": "현상중",
-  "status.developed": "현상완료",
-  "status.developingWithProgress": "현상중 {progress}%",
-  "a11y.undevelopedAlt": "미현상 상태의 흐릿한 사진 — {alt}",
-  "a11y.developingAlt": "현상중인 사진 — {alt}",
+  // 맺음 상태 (뱃지, alt 텍스트 등에서 공용)
+  "status.undeveloped": "미맺음",
+  "status.developing": "맺음중",
+  "status.developed": "맺음완료",
+  "status.developingWithProgress": "맺음중 {progress}%",
+  "a11y.undevelopedAlt": "미맺음 상태의 흐릿한 사진 — {alt}",
+  "a11y.developingAlt": "맺음중인 사진 — {alt}",
 
   // 헤더 / 내비게이션
   "nav.ariaLabel": "주요 내비게이션",
@@ -37,13 +37,13 @@ const ko = {
   "home.headlinePrefix": "되살아나는",
   "home.headlineEmphasis": "기억들",
   "home.subtitle": "좋아하는 순간이 서서히 선명해지는 과정을 천천히 지켜보세요.",
-  "home.heroDeveloping": "현상중",
+  "home.heroDeveloping": "맺음중",
   "home.heroEmptyNoDiaries": "아직 남긴 기억이 없어요. 첫 기억을 남겨보세요.",
-  "home.heroEmptyAllDeveloped": "모든 기억이 완전히 현상되었어요.",
+  "home.heroEmptyAllDeveloped": "모든 기억이 완전히 맺혔어요.",
   "home.darkroomTitle": "암실 속 기억들",
   "home.statMemories": "기록",
   "home.statCountries": "국가",
-  "home.statAvgDev": "평균 현상률",
+  "home.statAvgDev": "평균 맺음률",
   "home.emptyTitle": "첫 여행 기억을 남겨보세요",
   "home.emptyDescription":
     "도시를 고르고 사진을 선택하면, 시간이 지나며 서서히 선명해지는 나만의 기억이 만들어져요.",
@@ -84,7 +84,7 @@ const ko = {
   "create.previewButton": "미리보기",
   "create.previewHeading": "마지막으로 한 번 더.",
   "create.previewSubheading": "숨을 고르세요. 이 기억은 이제 안전하게 담겨, 서서히 드러날 순간을 기다립니다.",
-  "create.previewHelper": "이 기억은 시간이 지나며 서서히 현상됩니다. 천천히 선명해지는 과정을 지켜보세요.",
+  "create.previewHelper": "이 기억은 시간이 지나며 서서히 맺힙니다. 천천히 선명해지는 과정을 지켜보세요.",
   "create.saveToTripBook": "Trip Book에 저장",
 
   // 세부 정보 폼 (작성/수정 공용)
@@ -112,8 +112,8 @@ const ko = {
 
   // 기억 상세
   "detail.notFoundHeaderTitle": "기억 상세",
-  "detail.progressStatus": "현상 진행 상태",
-  "detail.completedText": "현상이 완료되었어요",
+  "detail.progressStatus": "맺음 진행 상태",
+  "detail.completedText": "맺음이 완료되었어요",
   "detail.hoursRemaining": "약 {hours}시간 후 자동으로 선명해져요",
   "detail.revisitEditCount": "재방문 {revisit}회 · 수정 {edit}회",
   "detail.ratingAria": "평점 {value}점",
@@ -138,13 +138,13 @@ const ko = {
 
   // Not Found
   "notfound.pageTitle": "페이지 없음",
-  "notfound.title": "이 페이지는 아직 현상되지 않았어요",
+  "notfound.title": "이 페이지는 아직 맺히지 않았어요",
   "notfound.description": "찾으시는 화면이 존재하지 않습니다. 홈에서 다시 시작해 보세요.",
   "notfound.goHome": "홈으로 이동",
 
   // 토스트
   "toast.storageRecovered": "저장 데이터를 복구하지 못했습니다. 처음부터 다시 시작합니다.",
-  "toast.developed": "{city}의 기억이 현상되었습니다",
+  "toast.developed": "{city}의 기억이 맺혔습니다",
   "toast.diarySaved": "{city}의 기억이 저장되었습니다",
   "toast.diaryDeleted": "기억을 삭제했습니다.",
   "toast.diaryUpdated": "수정 내용을 저장했습니다.",

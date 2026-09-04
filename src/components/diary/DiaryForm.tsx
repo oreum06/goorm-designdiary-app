@@ -127,7 +127,7 @@ export function DiaryForm({ defaultValues, submitLabel, onSubmit }: DiaryFormPro
           id="title"
           type="text"
           placeholder={t("form.titlePlaceholder")}
-          className="w-full rounded-none border-b-2 border-border bg-transparent py-2 font-display-lg-mobile text-display-lg-mobile text-on-background transition-colors placeholder:text-outline-variant focus:border-tertiary focus:outline-none"
+          className="w-full rounded-none border-b-2 border-border bg-transparent py-2 font-headline-sm text-headline-sm text-on-background transition-colors placeholder:text-outline-variant focus:border-tertiary focus:outline-none"
           {...register("title")}
         />
         {errors.title ? (
