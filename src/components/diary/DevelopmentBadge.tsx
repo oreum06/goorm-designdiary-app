@@ -21,13 +21,13 @@ export function DevelopmentBadge({ status, progress, className = "" }: Developme
   const { t } = useTranslation();
   return (
     <span
-      className={`inline-flex items-center gap-1 whitespace-nowrap rounded-full px-3 py-1 font-label-md text-[11px] font-semibold uppercase tracking-wider shadow-sm ${STATUS_BADGE_BG[status]} ${STATUS_BADGE_TEXT[status]} ${className}`}
+      className={`inline-flex min-w-0 max-w-full items-center gap-1 rounded-full px-3 py-1 font-label-md text-[11px] font-semibold uppercase tracking-wider shadow-sm ${STATUS_BADGE_BG[status]} ${STATUS_BADGE_TEXT[status]} ${className}`}
     >
       <Icon
         name={STATUS_ICON[status]}
-        className={`text-[13px] ${status === "developing" ? "animate-spin-slow" : ""}`}
+        className={`shrink-0 text-[13px] ${status === "developing" ? "animate-spin-slow" : ""}`}
       />
-      {getStatusLabel(t, status, progress)}
+      <span className="min-w-0 truncate">{getStatusLabel(t, status, progress)}</span>
     </span>
   );
 }

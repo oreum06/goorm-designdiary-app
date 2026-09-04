@@ -38,7 +38,7 @@ export function DiaryCard({ diary, className = "", aspect = "square" }: DiaryCar
           className="h-full w-full object-cover transition-[filter] duration-[400ms] ease-out"
           style={{ filter }}
         />
-        <div className="absolute left-2 top-2">
+        <div className="absolute left-2 right-16 top-2">
           <DevelopmentBadge status={status} progress={progress} />
         </div>
       </div>

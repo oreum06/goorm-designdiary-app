@@ -92,7 +92,7 @@ function ExploreCityCard({
           </h2>
         </div>
         {best ? (
-          <div className="absolute left-6 top-6 z-10">
+          <div className="absolute left-6 right-6 top-6 z-10">
             <DevelopmentBadge status={best.info.status} progress={best.info.progress} />
           </div>
         ) : null}
